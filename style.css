@@ -15,8 +15,13 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+body.dark-mode {
+  background-color: #000;  /* fundo preto */
+  color: var(--text);      /* mantém texto escuro, você pode mudar para branco se quiser */
+}
+
 .container {
-  background: white;
+  background: white; /* sempre branco */
   padding: 20px;
   border-radius: 12px;
   width: 100%;
@@ -76,11 +81,4 @@ li button {
   border: none;
   font-size: 16px;
   cursor: pointer;
-}
-
-.dark-mode {
-  --bg: #121212;
-  --text: #f5f5f5;
-  --accent: #bb86fc;
-  --done: #2e7d32;
 }
